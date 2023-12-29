@@ -1,0 +1,9 @@
+q1: 2 = becoz all other corner are diagonal line and then if we form all the side line we create an asterisk. the missing line is number 2
+
+q2: 2 = from the top left side we have triangle, circle and square, I assume that the missing shape with question mark is biggest square
+
+q3: 3 = i think in this question if we have shape number 3 and another square that align to the right we can create the shape from the bottom-right.
+
+q4: 2 = i will check the position of line and the missing was at the center-top, then from the right-side the missing square could be in bottom left parallel with circle (not solid/wihtout shade)
+
+q5: 3 = in the missing box would be the circle and square must together
