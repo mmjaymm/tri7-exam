@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\EmployeeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('employee')->group(function () {
+    Route::get('get-all', [EmployeeController::class, 'getAllEmployees'])->name('employee.get-all');
+    Route::post('create', [EmployeeController::class, 'storeEmployee'])->name('employee.create');
+    Route::delete('/{id}', [EmployeeController::class, 'destroy'])->name('employee.delete');
+    Route::get('/{id}', [EmployeeController::class, 'show'])->name('employee.edit');
+    Route::put('/{id}/update', [EmployeeController::class, 'update'])->name('employee.update');
 });
